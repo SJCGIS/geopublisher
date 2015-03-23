@@ -1,0 +1,2 @@
+You'll want a database connection to an ArcSDE instance here.
+Name it 'Test_SDE.sde' and update the tests in TestGeopublisher as necessary.

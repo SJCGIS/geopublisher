@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<metadata>
+	<idinfo>
+		<citation>
+			<citeinfo>
+				<origin>U.S. Geological Survey</origin>
+				<pubdate>19810501</pubdate>
+				<title>Geographic Names Information System</title>
+				<pubinfo>
+					<pubplace>Reston, VA</pubplace>
+					<publish>U.S. Geological Survey</publish>
+				</pubinfo>
+				<ftname Sync="TRUE">Airports</ftname><geoform Sync="TRUE">vector digital data</geoform><onlink Sync="TRUE">\\gisserver\gis\Data\Current\Airports\Airports.shp</onlink></citeinfo>
+		</citation>
+		<descript>
+			<abstract>An automated inventory of the names and locations of physical and cultural geographic features located throughout the United States</abstract>
+			<purpose>To promote geographic feature name standardization and to serve as the Federal Government's repository of information regarding feature name spellings and applications for features in U.S. The names listed in the inventory can be published on Federal maps, charts, and in other documents.  The feature locative information has been used in emergency preparedness, marketing, site-selection and analysis, genealogical and historical research, and transportation routing applications.</purpose>
+			<langdata Sync="TRUE">en</langdata></descript>
+		<timeperd>
+			<timeinfo>
+				<rngdates>
+					<begdate>unknown</begdate>
+					<enddate>Present</enddate>
+				</rngdates>
+			</timeinfo>
+			<current>ground condition</current>
+		</timeperd>
+		<status>
+			<progress>In work.</progress>
+			<update>As needed.</update>
+		</status>
+		<spdom>
+			<bounding>
+				<westbc Sync="TRUE">-123.177951</westbc>
+				<eastbc Sync="TRUE">-122.687375</eastbc>
+				<northbc Sync="TRUE">48.717378</northbc>
+				<southbc Sync="TRUE">48.478182</southbc>
+			</bounding>
+			<lboundng><leftbc Sync="TRUE">1074371.943059</leftbc><rightbc Sync="TRUE">1190833.103104</rightbc><bottombc Sync="TRUE">547791.396380</bottombc><topbc Sync="TRUE">631912.770154</topbc></lboundng></spdom>
+		<keywords>
+			<theme>
+				<themekt>None.</themekt>
+				<themekey>geographic feature</themekey>
+				<themekey>feature name</themekey>
+				<themekey>place name</themekey>
+			</theme>
+			<place>
+				<placekt>None.</placekt>
+				<placekey>United States</placekey>
+				<placekey>Territories</placekey>
+				<placekey>Outlying Areas</placekey>
+			</place>
+		</keywords>
+		<accconst>None</accconst>
+		<useconst>None</useconst>
+		<ptcontac>
+			<cntinfo>
+				<cntperp>
+					<cntper>Roger L. Payne</cntper>
+					<cntorg>U.S. Geological Survey</cntorg>
+				</cntperp>
+				<cntpos>Chief, Branch of Geographic Names</cntpos>
+				<cntaddr>
+					<addrtype>mailing address</addrtype>
+					<address>523 National Center</address>
+					<city>Reston</city>
+					<state>Virginia</state>
+					<postal>20192</postal>
+				</cntaddr>
+				<cntvoice>1 703 648 4544</cntvoice>
+				<cntemail>rpayne@usgs.gov</cntemail>
+				<hours>0730-1700</hours>
+			</cntinfo>
+		</ptcontac>
+		<datacred>The Geographic Names Information System was developed by the U.S. Geological Survey in cooperation with the U.S. Board on Geographic
+Names.</datacred>
+		<native Sync="TRUE">Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 3; ESRI ArcCatalog 9.3.1.1850</native>
+		<natvform Sync="TRUE">Shapefile</natvform></idinfo>
+	<dataqual>
+		<attracc>
+			<attraccr>A random sample of 10% of the entries in the system were visually verified against the compilation source data (large-scale USGS topographic maps) to ensure an accuracy rate of at least 95%.</attraccr>
+		</attracc>
+		<logic>Locative references (geographic coordinates, topographic map, and county) are cross-checked for logical consistency.</logic>
+		<complete>This dataset contains information about physical and cultural geographic features identified by a proper name, with the exception of most roads and highways.</complete>
+		<posacc>
+			<horizpa>
+				<horizpar>Accuracy of these digital data is based upon the use of source graphics which are compiled to meet National Map Accuracy Standards. Comparision to the graphic source is used as control to assess digital positional accuracy.</horizpar>
+			</horizpa>
+		</posacc>
+		<lineage>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>U.S. Geological Survey</origin>
+						<pubdate>unknown</pubdate>
+						<title>1:24,000-scale topographic maps</title>
+						<geoform>map</geoform>
+						<pubinfo>
+							<pubplace>Reston, VA</pubplace>
+							<publish>U.S. Geological Survey</publish>
+						</pubinfo>
+					</citeinfo>
+				</srccite>
+				<srcscale>24000</srcscale>
+				<typesrc>paper</typesrc>
+				<srctime>
+					<timeinfo>
+						<rngdates>
+							<begdate>unknown</begdate>
+							<enddate>present</enddate>
+						</rngdates>
+					</timeinfo>
+					<srccurr>publication date</srccurr>
+				</srctime>
+				<srccitea>USGS</srccitea>
+				<srccontr>Feature names and attribute information</srccontr>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>U.S. Board on Geographic Names</origin>
+						<pubdate>Unpublished material</pubdate>
+						<title>Records of the U.S. BGN</title>
+					</citeinfo>
+				</srccite>
+				<typesrc>card files</typesrc>
+				<srctime>
+					<timeinfo>
+						<rngdates>
+							<begdate>1932</begdate>
+							<enddate>present</enddate>
+						</rngdates>
+					</timeinfo>
+					<srccurr>creation date</srccurr>
+				</srctime>
+				<srccitea>USBGN</srccitea>
+				<srccontr>Feature names and attribute information</srccontr>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>U.S. Forest Service</origin>
+						<pubdate>unknown</pubdate>
+						<title>U.S. Forest Service 1:24,000-scale topographic maps</title>
+					</citeinfo>
+				</srccite>
+				<typesrc>paper</typesrc>
+				<srctime>
+					<timeinfo>
+						<rngdates>
+							<begdate>unknown</begdate>
+							<enddate>present</enddate>
+						</rngdates>
+					</timeinfo>
+					<srccurr>publication date</srccurr>
+				</srctime>
+				<srccitea>USFS</srccitea>
+				<srccontr>Feature names and attribute information</srccontr>
+			</srcinfo>
+			<procstep>
+				<procdesc>GNIS Phase I data compilation and edit--Feature name and attribute data are collected from the largest-scale USGS topographic maps available.  These data are compared to the records of the U.S. Board on Geographic Names.</procdesc>
+				<srcused>USGS, USBGN</srcused>
+				<procdate>198105, not complete</procdate>
+				<procdate>198105, not complete</procdate>
+				<proccont>
+					<cntinfo>
+						<cntperp>
+							<cntper>Roger L. Payne, Robin D. Worcester</cntper>
+						</cntperp>
+					</cntinfo>
+				</proccont>
+				<proccont>
+					<cntinfo>
+						<cntperp>
+							<cntper>Roger L. Payne, Robin D. Worcester</cntper>
+							<cntorg>U.S. Geological Survey</cntorg>
+						</cntperp>
+						<cntpos>Chief, Geographic Names Information Section</cntpos>
+						<cntaddr>
+							<addrtype>mailing address</addrtype>
+							<address>523 National Center</address>
+							<city>Reston</city>
+							<state>Virginia</state>
+							<postal>20192</postal>
+						</cntaddr>
+						<cntvoice>1 703 648 4551</cntvoice>
+						<cntemail>rwrocest@usgs.gov</cntemail>
+					</cntinfo>
+				</proccont>
+			</procstep>
+			<procstep>
+				<procdesc>
+GNIS Maintenance program--Maintenance cooperators feed GNIS
+new names and corrections discovered in the course of new
+mapping and revision activities and implementation of the
+national geographic names standarization program.
+</procdesc>
+				<srcused>USBGN, USGS, USFS</srcused>
+				<procdate>ongoing</procdate>
+				<proccont>
+					<cntinfo>
+						<cntperp>
+							<cntper>Robin D. Worcester</cntper>
+							<cntorg>U.S. Geological Survey</cntorg>
+						</cntperp>
+						<cntpos>Chief, Geographic Names Information Section</cntpos>
+						<cntaddr>
+							<addrtype>mailing address</addrtype>
+							<address>523 National Center</address>
+							<city>Reston</city>
+							<state>Virginia</state>
+							<postal>20192</postal>
+						</cntaddr>
+						<cntvoice>1 703 648 4551</cntvoice>
+						<cntemail>rworcest@usgs.gov</cntemail>
+						<hours>0900-1700</hours>
+					</cntinfo>
+				</proccont>
+			</procstep>
+			<procstep><procdesc Sync="TRUE">Metadata imported.</procdesc><srcused Sync="TRUE">Z:\metadata\gnis.xml</srcused><date Sync="TRUE">20030325</date><time Sync="TRUE">17182000</time></procstep><procstep><procdesc Sync="TRUE">Dataset copied.</procdesc><srcused Sync="TRUE"></srcused><date Sync="TRUE">20030925</date><time Sync="TRUE">13352000</time></procstep><procstep><procdesc Sync="TRUE">Dataset copied.</procdesc><srcused Sync="TRUE"></srcused><date Sync="TRUE">20030925</date><time Sync="TRUE">14163400</time></procstep><procstep><procdesc Sync="TRUE">Dataset copied.</procdesc><srcused Sync="TRUE"></srcused><date Sync="TRUE">20031208</date><time Sync="TRUE">16353200</time></procstep><procstep><procdesc Sync="TRUE">Dataset copied.</procdesc><srcused Sync="TRUE">\\GIS1\D$\GISLib_working\Landmarks.mdb</srcused><date Sync="TRUE">20040415</date><time Sync="TRUE">10442100</time></procstep><procstep><procdesc Sync="TRUE">Dataset copied.</procdesc><srcused Sync="TRUE">C:\GIS_Library\911_layers\Landmarks</srcused><date Sync="TRUE">20040430</date><time Sync="TRUE">17154600</time></procstep><procstep><procdesc Sync="TRUE">Dataset copied.</procdesc><srcused Sync="TRUE">O:\Workspace\POSITRON\Archive\Landmarks</srcused><date Sync="TRUE">20080306</date><time Sync="TRUE">16182100</time></procstep><procstep><procdesc Sync="TRUE">Dataset copied.</procdesc><srcused Sync="TRUE"></srcused><date Sync="TRUE">20080311</date><time Sync="TRUE">10591500</time></procstep><procstep><procdesc Sync="TRUE">Dataset copied.</procdesc><srcused Sync="TRUE"></srcused><procdate Sync="TRUE">20090402</procdate><proctime Sync="TRUE">16284100</proctime></procstep></lineage>
+	</dataqual>
+	<spdoinfo>
+		<indspref>
+Features are located by State and county, and related to the USGS topographic
+map on which the feature is shown.
+</indspref>
+		<direct Sync="TRUE">Vector</direct>
+		<ptvctinf>
+			<sdtsterm Name="Airports">
+				<sdtstype Sync="TRUE">Entity point</sdtstype>
+				<ptvctcnt Sync="TRUE">16</ptvctcnt></sdtsterm>
+			<esriterm Name="Airports"><efeatyp Sync="TRUE">Simple</efeatyp><efeageom Sync="TRUE">Point</efeageom><esritopo Sync="TRUE">FALSE</esritopo><efeacnt Sync="TRUE">16</efeacnt><spindex Sync="TRUE">TRUE</spindex><linrefer Sync="TRUE">FALSE</linrefer></esriterm><esriterm Name="tic"><efeatyp Sync="TRUE">Simple</efeatyp><efeageom Sync="TRUE">Tic</efeageom><esritopo Sync="TRUE">FALSE</esritopo><efeacnt Sync="TRUE">4</efeacnt><spindex Sync="TRUE">FALSE</spindex><linrefer Sync="TRUE">FALSE</linrefer></esriterm><sdtsterm Name="tic"><sdtstype Sync="TRUE">Point</sdtstype><ptvctcnt Sync="TRUE">4</ptvctcnt></sdtsterm></ptvctinf>
+	</spdoinfo>
+	<spref>
+		<horizsys>
+			<cordsysn><geogcsn Sync="TRUE">GCS_North_American_1983</geogcsn><projcsn Sync="TRUE">NAD_1983_StatePlane_Washington_North_FIPS_4601_Feet</projcsn></cordsysn><planar><planci><plance Sync="TRUE">coordinate pair</plance><plandu Sync="TRUE">survey feet</plandu><coordrep><absres Sync="TRUE">0.000000</absres><ordres Sync="TRUE">0.000000</ordres></coordrep></planci><mapproj><mapprojn Sync="TRUE">Lambert Conformal Conic</mapprojn><lambertc><stdparll Sync="TRUE">47.500000</stdparll><stdparll Sync="TRUE">48.733333</stdparll><longcm Sync="TRUE">-120.833333</longcm><latprjo Sync="TRUE">47.000000</latprjo><feast Sync="TRUE">1640416.666667</feast><fnorth Sync="TRUE">0.000000</fnorth></lambertc></mapproj></planar><geodetic><horizdn Sync="TRUE">North American Datum of 1983</horizdn><ellips Sync="TRUE">Geodetic Reference System 80</ellips><semiaxis Sync="TRUE">6378137.000000</semiaxis><denflat Sync="TRUE">298.257222</denflat></geodetic></horizsys>
+	</spref>
+	<eainfo>
+		<overview>
+			<eaover>The dataset contains records for named geographic features located in the United States, its Territories and Outlying Areas.  The records are organized by State (or State equivalent).  Each record includes: the official name of the feature; the feature type; the county(s) in which the feature is located; the name(s) of the USGS 1:24,000-scale topographic map(s) on which the feature is shown; geographic coordinates locating the mouth of linear features and the approximate center of areal features, and coordinates locating the feature on 
+each additional (if any) USGS 1:24,000-scale map on which the feature is shown; a bibliographic code referring to the source of information for each record, and other names by which the feature may be or may have been known.  Some records include information about the history of the feature or the origin of the feature name.</eaover>
+			<eadetcit>U.S. Department of the Interior, U.S. Geological Survey, 1987 Geographic Names Information System--Data Users Guide 6; Reston, Virginia. Softcopy in hypertext format is available at: &lt;URL:http://mapping.usgs.gov/www/ti/GNIS/gnis_users_guide_toc.html&gt;
+Softcopy in ASCII format is available at: &lt;URL:ftp://mapping.usgs.gov/pub/ti/GNIS/gnisguide/gnisdug.txt&gt;
+Softcopy in WordPerfect format is available at: URL:ftp://mapping.usgs.gov/pub/ti/GNIS/gnisguide/gnisdug.wp5&gt;
+Softcopy in Postscript format is available at: &lt;URL:ftp://mapping.usgs.gov/pub/ti/GNIS/gnisguide/gnisdug.ps&gt;</eadetcit>
+		</overview>
+		<detailed Name="Airports"><enttyp><enttypl Sync="TRUE">Airports</enttypl><enttypt Sync="TRUE">Feature Class</enttypt><enttypc Sync="TRUE">16</enttypc></enttyp><attr><attrlabl Sync="TRUE">FID</attrlabl><attalias Sync="TRUE">FID</attalias><attrtype Sync="TRUE">OID</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale><attrdef Sync="TRUE">Internal feature number.</attrdef><attrdefs Sync="TRUE">ESRI</attrdefs><attrdomv><udom Sync="TRUE">Sequential unique whole numbers that are automatically generated.</udom></attrdomv></attr><attr><attrlabl Sync="TRUE">Shape</attrlabl><attalias Sync="TRUE">Shape</attalias><attrtype Sync="TRUE">Geometry</attrtype><attwidth Sync="TRUE">0</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale><attrdef Sync="TRUE">Feature geometry.</attrdef><attrdefs Sync="TRUE">ESRI</attrdefs><attrdomv><udom Sync="TRUE">Coordinates defining the features.</udom></attrdomv></attr><attr><attrlabl Sync="TRUE">OBJECTID</attrlabl><attalias Sync="TRUE">OBJECTID</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">9</attwidth></attr><attr><attrlabl Sync="TRUE">AREA</attrlabl><attwidth Sync="TRUE">19</attwidth><atoutwid Sync="TRUE">18</atoutwid><attrtype Sync="TRUE">Float</attrtype><attrdef Sync="TRUE">Area of feature in internal units squared.</attrdef><attrdefs Sync="TRUE">ESRI</attrdefs><attrdomv><udom Sync="TRUE">Area is always zero for point coverages.  Values are automatically generated.</udom></attrdomv><attalias Sync="TRUE">AREA</attalias><atnumdec Sync="TRUE">11</atnumdec></attr><attr><attrlabl Sync="TRUE">PERIMETER</attrlabl><attwidth Sync="TRUE">19</attwidth><atoutwid Sync="TRUE">18</atoutwid><attrtype Sync="TRUE">Float</attrtype><attrdef Sync="TRUE">Perimeter of feature in internal units.</attrdef><attrdefs Sync="TRUE">ESRI</attrdefs><attrdomv><udom Sync="TRUE">Perimeter is always zero for point coverages.  Values are automatically generated.</udom></attrdomv><attalias Sync="TRUE">PERIMETER</attalias><atnumdec Sync="TRUE">11</atnumdec></attr><attr><attrlabl Sync="TRUE">GNIS_</attrlabl><attwidth Sync="TRUE">9</attwidth><atoutwid Sync="TRUE">5</atoutwid><attrtype Sync="TRUE">Number</attrtype><attrdef Sync="TRUE">Internal feature number.</attrdef><attrdefs Sync="TRUE">ESRI</attrdefs><attrdomv><udom Sync="TRUE">Sequential unique whole numbers that are automatically generated.</udom></attrdomv><attalias Sync="TRUE">GNIS_</attalias></attr><attr><attrlabl Sync="TRUE">GNIS_ID</attrlabl><attwidth Sync="TRUE">9</attwidth><atoutwid Sync="TRUE">5</atoutwid><attrtype Sync="TRUE">Number</attrtype><attrdef Sync="TRUE">User-defined feature number.</attrdef><attrdefs Sync="TRUE">ESRI</attrdefs><attalias Sync="TRUE">GNIS_ID</attalias></attr><attr><attrlabl Sync="TRUE">STATE</attrlabl><attwidth Sync="TRUE">2</attwidth><atoutwid Sync="TRUE">2</atoutwid><attrtype Sync="TRUE">String</attrtype><attalias Sync="TRUE">STATE</attalias></attr><attr><attrlabl Sync="TRUE">GEONAME</attrlabl><attwidth Sync="TRUE">48</attwidth><atoutwid Sync="TRUE">48</atoutwid><attrtype Sync="TRUE">String</attrtype><attalias Sync="TRUE">GEONAME</attalias></attr><attr><attrlabl Sync="TRUE">FCLASS</attrlabl><attwidth Sync="TRUE">10</attwidth><atoutwid Sync="TRUE">10</atoutwid><attrtype Sync="TRUE">String</attrtype><attalias Sync="TRUE">FCLASS</attalias></attr><attr><attrlabl Sync="TRUE">COUNTY_NM</attrlabl><attwidth Sync="TRUE">15</attwidth><atoutwid Sync="TRUE">15</atoutwid><attrtype Sync="TRUE">String</attrtype><attalias Sync="TRUE">COUNTY_NM</attalias></attr><attr><attrlabl Sync="TRUE">ST_FIPS</attrlabl><attwidth Sync="TRUE">4</attwidth><atoutwid Sync="TRUE">2</atoutwid><attrtype Sync="TRUE">Number</attrtype><attalias Sync="TRUE">ST_FIPS</attalias></attr><attr><attrlabl Sync="TRUE">CO_FIPS</attrlabl><attwidth Sync="TRUE">3</attwidth><atoutwid Sync="TRUE">3</atoutwid><attrtype Sync="TRUE">String</attrtype><attalias Sync="TRUE">CO_FIPS</attalias></attr><attr><attrlabl Sync="TRUE">P_LAT_DMS</attrlabl><attwidth Sync="TRUE">8</attwidth><atoutwid Sync="TRUE">8</atoutwid><attrtype Sync="TRUE">String</attrtype><attalias Sync="TRUE">P_LAT_DMS</attalias></attr><attr><attrlabl Sync="TRUE">P_LONG_DMS</attrlabl><attwidth Sync="TRUE">8</attwidth><atoutwid Sync="TRUE">8</atoutwid><attrtype Sync="TRUE">String</attrtype><attalias Sync="TRUE">P_LONG_DMS</attalias></attr><attr><attrlabl Sync="TRUE">P_LAT_DD</attrlabl><attwidth Sync="TRUE">19</attwidth><atoutwid Sync="TRUE">8</atoutwid><attrtype Sync="TRUE">Float</attrtype><attalias Sync="TRUE">P_LAT_DD</attalias><atnumdec Sync="TRUE">11</atnumdec></attr><attr><attrlabl Sync="TRUE">P_LONG_DD</attrlabl><attwidth Sync="TRUE">19</attwidth><atoutwid Sync="TRUE">10</atoutwid><attrtype Sync="TRUE">Float</attrtype><attalias Sync="TRUE">P_LONG_DD</attalias><atnumdec Sync="TRUE">11</atnumdec></attr><attr><attrlabl Sync="TRUE">S_LAT_DMS</attrlabl><attwidth Sync="TRUE">19</attwidth><atoutwid Sync="TRUE">8</atoutwid><attrtype Sync="TRUE">Float</attrtype><attalias Sync="TRUE">S_LAT_DMS</attalias><atnumdec Sync="TRUE">11</atnumdec></attr><attr><attrlabl Sync="TRUE">S_LONG_DMS</attrlabl><attwidth Sync="TRUE">19</attwidth><atoutwid Sync="TRUE">10</atoutwid><attrtype Sync="TRUE">Float</attrtype><attalias Sync="TRUE">S_LONG_DMS</attalias><atnumdec Sync="TRUE">11</atnumdec></attr><attr><attrlabl Sync="TRUE">S_LAT_DD</attrlabl><attwidth Sync="TRUE">19</attwidth><atoutwid Sync="TRUE">8</atoutwid><attrtype Sync="TRUE">Float</attrtype><attalias Sync="TRUE">S_LAT_DD</attalias><atnumdec Sync="TRUE">11</atnumdec></attr><attr><attrlabl Sync="TRUE">S_LONG_DD</attrlabl><attwidth Sync="TRUE">19</attwidth><atoutwid Sync="TRUE">10</atoutwid><attrtype Sync="TRUE">Float</attrtype><attalias Sync="TRUE">S_LONG_DD</attalias><atnumdec Sync="TRUE">11</atnumdec></attr><attr><attrlabl Sync="TRUE">ELEVATION</attrlabl><attwidth Sync="TRUE">9</attwidth><atoutwid Sync="TRUE">6</atoutwid><attrtype Sync="TRUE">Number</attrtype><attalias Sync="TRUE">ELEVATION</attalias></attr><attr><attrlabl Sync="TRUE">POP_EST</attrlabl><attwidth Sync="TRUE">9</attwidth><atoutwid Sync="TRUE">7</atoutwid><attrtype Sync="TRUE">Number</attrtype><attalias Sync="TRUE">POP_EST</attalias></attr><attr><attrlabl Sync="TRUE">FED_STATUS</attrlabl><attwidth Sync="TRUE">9</attwidth><atoutwid Sync="TRUE">6</atoutwid><attrtype Sync="TRUE">Number</attrtype><attalias Sync="TRUE">FED_STATUS</attalias></attr><attr><attrlabl Sync="TRUE">CELL_NAME</attrlabl><attwidth Sync="TRUE">30</attwidth><atoutwid Sync="TRUE">30</atoutwid><attrtype Sync="TRUE">String</attrtype><attalias Sync="TRUE">CELL_NAME</attalias></attr><attr><attrlabl Sync="TRUE">POLYGONID</attrlabl><attalias Sync="TRUE">POLYGONID</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">9</attwidth></attr><attr><attrlabl Sync="TRUE">SCALE</attrlabl><attalias Sync="TRUE">SCALE</attalias><attrtype Sync="TRUE">Float</attrtype><attwidth Sync="TRUE">19</attwidth><atnumdec Sync="TRUE">11</atnumdec></attr><attr><attrlabl Sync="TRUE">ANGLE</attrlabl><attalias Sync="TRUE">ANGLE</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">9</attwidth></attr><attr><attrlabl Sync="TRUE">Alias</attrlabl><attalias Sync="TRUE">Alias</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">50</attwidth></attr><attr><attrlabl Sync="TRUE">Island</attrlabl><attalias Sync="TRUE">Island</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">25</attwidth></attr><attr><attrlabl Sync="TRUE">COMMON_NM</attrlabl><attalias Sync="TRUE">COMMON_NM</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">50</attwidth></attr></detailed></eainfo>
+	<distinfo>
+		<distrib>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>Earth Science Information Center, U.S.Geological Survey</cntorg>
+				</cntorgp>
+				<cntaddr>
+					<addrtype>mailing address</addrtype>
+					<address>507 National Center</address>
+					<city>Reston</city>
+					<state>Virginia</state>
+					<postal>20192</postal>
+				</cntaddr>
+				<cntvoice>1 888 ASK USGS</cntvoice>
+				<hours>
+In addition to the address above there are other ESIC offices
+throughout the country.  A full list of these offices is at:
+&lt;URL:http://mapping.usgs.gov/esic/esic_index.html&gt;
+</hours>
+			</cntinfo>
+		</distrib>
+		<resdesc>Geographic Names Information System</resdesc>
+		<distliab>Although these data have been processed successfully on a computer system at the U.S. Geological Survey, no warranty expressed or implied is made by the USGS regarding the utility of the data on any other system, nor shall the act of distribution constitute any such warranty. The Geological Survey will warrant the delivery of this product in computer-readable format, and will offer appropriate adjustment of credit when the product is determined nreadable by correctly adjusted computer input peripherals, or when the physical medium is delivered in damaged condition.  Requests for adjustment of credit must be made within 90 day from the date of this shipment from the ordering site.</distliab>
+		<stdorder>
+			<fees>The charge is $57 for the CD-ROM. A $3.50 handling charge is applied to all mail orders.</fees>
+			<digform><digtinfo><transize Sync="TRUE">0.001</transize><dssize Sync="TRUE">0.001</dssize><formname>ARCE</formname><formvern>8</formvern></digtinfo></digform></stdorder>
+		<techpreq>Requires an IBM PC-XT-AT or compatible microcomputer with 512 kilobytes of memory, with DOS operating system version 3.0 or greater; one 20 megabyte hard disk drive; and a CD-ROM reader with software drivers that read ISO-9660 formatted CD-ROMs. The CD-ROM contains software for searching, sorting, displaying, printing, and exporting the data.  The software must be installed
+onto a hard disk before the data can be used.</techpreq></distinfo>
+	<metainfo>
+		<metd Sync="TRUE">20090922</metd>
+		<metc>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>U.S. Geological Survey</cntorg>
+					<cntper>REQUIRED: The person responsible for the metadata information.</cntper></cntorgp>
+				<cntaddr>
+					<addrtype>mailing address</addrtype>
+					<address>508 National Center</address>
+					<city>Reston</city>
+					<state>Virginia</state>
+					<postal>20192</postal>
+				</cntaddr>
+				<cntvoice>1 703 648 4543</cntvoice>
+			</cntinfo>
+		</metc>
+		<metstdn Sync="TRUE">FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+		<metstdv Sync="TRUE">FGDC-STD-001-1998</metstdv>
+		<langmeta Sync="TRUE">en</langmeta><mettc Sync="TRUE">local time</mettc><metextns><onlink Sync="TRUE">http://www.esri.com/metadata/esriprof80.html</onlink><metprof Sync="TRUE">ESRI Metadata Profile</metprof></metextns></metainfo>
+	<Esri><CreaDate>20150323</CreaDate><CreaTime>10544800</CreaTime><SyncOnce>FALSE</SyncOnce><SyncDate>20090922</SyncDate><SyncTime>16330100</SyncTime><ModDate>20090922</ModDate><ModTime>16330100</ModTime><DataProperties><lineage><Process ToolSource="C:\Program Files (x86)\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20130108" Time="110450">CalculateField Airports Type Land VB #</Process></lineage><itemProps><itemLocation><linkage Sync="TRUE">file://\\Gisserver\gis\Workspace\Nick\sandbox\geopublisher\tests\data\Test_Shapefiles\Airports</linkage><protocol Sync="TRUE">Local Area Network</protocol></itemLocation></itemProps><copyHistory><copy source="\\Gisserver\gis\Data\Current\Airports\Airports" dest="\\Gisserver\gis\Workspace\Nick\sandbox\geopublisher\tests\data\Test_Shapefiles\Airports" date="20150323" time="10544800"></copy></copyHistory></DataProperties><ArcGISstyle>ISO 19139 Metadata Implementation Specification</ArcGISstyle></Esri><dataIdInfo><envirDesc Sync="TRUE">Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 3; ESRI ArcCatalog 9.3.1.1850</envirDesc><dataLang><languageCode Sync="TRUE" value="en"></languageCode></dataLang><idCitation><resTitle Sync="TRUE">Airports</resTitle><presForm><PresFormCd Sync="TRUE" value="005"></PresFormCd></presForm></idCitation><spatRpType><SpatRepTypCd Sync="TRUE" value="001"></SpatRepTypCd></spatRpType><geoBox esriExtentType="decdegrees"><westBL Sync="TRUE">-123.177951</westBL><eastBL Sync="TRUE">-122.687375</eastBL><northBL Sync="TRUE">48.717378</northBL><southBL Sync="TRUE">48.478182</southBL><exTypeCode Sync="TRUE">1</exTypeCode></geoBox><dataExt><geoEle><GeoBndBox esriExtentType="native"><westBL Sync="TRUE">1074371.943059</westBL><eastBL Sync="TRUE">1190833.103104</eastBL><northBL Sync="TRUE">631912.770154</northBL><southBL Sync="TRUE">547791.39638</southBL><exTypeCode Sync="TRUE">1</exTypeCode></GeoBndBox></geoEle></dataExt></dataIdInfo><mdLang><languageCode Sync="TRUE" value="en"></languageCode></mdLang><mdStanName Sync="TRUE">ISO 19115 Geographic Information - Metadata</mdStanName><mdStanVer Sync="TRUE">DIS_ESRI1.0</mdStanVer><mdChar><CharSetCd Sync="TRUE" value="004"></CharSetCd></mdChar><mdHrLv><ScopeCd Sync="TRUE" value="005"></ScopeCd></mdHrLv><mdHrLvName Sync="TRUE">dataset</mdHrLvName><distInfo><distributor><distorTran><onLineSrc><orDesc Sync="TRUE">002</orDesc><linkage Sync="TRUE">file://\\gisserver\gis\Data\Current\Airports\Airports.shp</linkage><protocol Sync="TRUE">Local Area Network</protocol></onLineSrc><transSize Sync="TRUE">0.001</transSize></distorTran><distorFormat><formatName Sync="TRUE">Shapefile</formatName></distorFormat></distributor></distInfo><refSysInfo><RefSystem><refSysID><identCode Sync="TRUE">NAD_1983_StatePlane_Washington_North_FIPS_4601_Feet</identCode></refSysID></RefSystem></refSysInfo><spatRepInfo><VectSpatRep><topLvl><TopoLevCd Sync="TRUE" value="001"></TopoLevCd></topLvl><geometObjs Name="Airports"><geoObjTyp><GeoObjTypCd Sync="TRUE" value="004"></GeoObjTypCd></geoObjTyp><geoObjCnt Sync="TRUE">16</geoObjCnt></geometObjs></VectSpatRep></spatRepInfo><mdDateSt Sync="TRUE">20090922</mdDateSt></metadata>
