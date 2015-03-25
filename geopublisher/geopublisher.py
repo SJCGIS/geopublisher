@@ -71,14 +71,12 @@ def create_archive(archive_folder, output_file):
     print 'Archiving %s to %s' % (output_file, archive_filepath)
     output_desc = arcpy.Describe(output_file)
     try:
-        zf = zipfile.ZipFile(archive_filepath, mode='w',
-                             compression=zipfile.ZIP_DEFLATED)
-        shape_zipper(output_file, zf)
+        with zipfile.ZipFile(archive_filepath, mode='w',
+                             compression=zipfile.ZIP_DEFLATED) as zf:
+            shape_zipper(output_file, zf)
+            zip_info(zf)
     except arcpy.ExecuteError as e:
         raise e
-    finally:
-        zf.close()
-        zip_info(zf)
 
 
 def shape_zipper(shapefile, zip):

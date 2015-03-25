@@ -211,15 +211,15 @@ class TestGeopublisher(unittest.TestCase):
         shapefile = os.path.join(self.testShpWorkspace, 'Airports.shp')
         testZipFile = os.path.join(self.archiveWorkspace, 'testZip.zip')
         try:
-            zf = zipfile.ZipFile(testZipFile, mode='w',
-                                 compression=zipfile.ZIP_DEFLATED)
-            geopublisher.shape_zipper(shapefile, zf)
+            with zipfile.ZipFile(testZipFile, mode='w',
+                                 compression=zipfile.ZIP_DEFLATED) as zf:
+
+                geopublisher.shape_zipper(shapefile, zf)
+
+                archiveFiles = zf.namelist()
+                self.assertNotIn('Airports.mxd', archiveFiles)
         except arcpy.ExecuteError as e:
             raise e
-        finally:
-            zf.close()
-        archiveFiles = zf.namelist()
-        self.assertNotIn('Airports.mxd', archiveFiles)
 
     def tearDown(self):
         """
