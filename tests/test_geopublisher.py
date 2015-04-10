@@ -61,7 +61,7 @@ class TestGeopublisher(unittest.TestCase):
         f2 = 'NOAA_Shorelines.shp'
         zipFolder = self.archiveWorkspace
         zipFile = f2 + '_' + date.isoformat(datetime.now()) + '.zip'
-        print zipFolder, zipFile
+        print(zipFolder, zipFile)
         geopublisher.publish_data(f1, loc, f2, zipFolder)
         self.assertTrue(arcpy.Exists(os.path.join(loc, f2)))
         self.assertTrue(zipfile.is_zipfile(os.path.join(zipFolder, zipFile)))
@@ -91,7 +91,7 @@ class TestGeopublisher(unittest.TestCase):
         f2 = 'Parcel_point.shp'
         zipFolder = self.archiveWorkspace
         zipFile = f2 + '_' + date.isoformat(datetime.now()) + '.zip'
-        print zipFolder, zipFile
+        print(zipFolder, zipFile)
         geopublisher.publish_data(f1, loc, f2, zipFolder)
         self.assertTrue(arcpy.Exists(os.path.join(loc, f2)))
         self.assertTrue(zipfile.is_zipfile(os.path.join(zipFolder, zipFile)))
@@ -115,7 +115,7 @@ class TestGeopublisher(unittest.TestCase):
         f2 = 'bridges.shp'
         zipFolder = self.archiveWorkspace
         zipFile = f2 + '_' + date.isoformat(datetime.now()) + '.zip'
-        print zipFolder, zipFile
+        print(zipFolder, zipFile)
         geopublisher.publish_data(f1, loc, f2, zipFolder)
         self.assertTrue(arcpy.Exists(os.path.join(loc, f2)))
         self.assertTrue(zipfile.is_zipfile(os.path.join(zipFolder, zipFile)))
@@ -142,7 +142,7 @@ class TestGeopublisher(unittest.TestCase):
         f2 = 'NOAA_Shorelines'
         zipFolder = self.archiveWorkspace
         zipFile = f2 + '_' + date.isoformat(datetime.now()) + '.zip'
-        print zipFolder, zipFile
+        print(zipFolder, zipFile)
         geopublisher.publish_data(f1, loc, f2, zipFolder)
         self.assertTrue(arcpy.Exists(os.path.join(loc, f2)))
         self.assertTrue(zipfile.is_zipfile(os.path.join(zipFolder, zipFile)))
@@ -171,7 +171,7 @@ class TestGeopublisher(unittest.TestCase):
         f2 = 'MP_Routes_2008'
         zipFolder = self.archiveWorkspace
         zipFile = f2 + '_' + date.isoformat(datetime.now()) + '.zip'
-        print zipFolder, zipFile
+        print(zipFolder, zipFile)
         geopublisher.publish_data(f1, loc, f2, zipFolder)
         self.assertTrue(arcpy.Exists(os.path.join(loc, f2)))
         self.assertTrue(zipfile.is_zipfile(os.path.join(zipFolder, zipFile)))
@@ -204,9 +204,7 @@ class TestGeopublisher(unittest.TestCase):
     def test_zipShapefile(self):
         """
         Test creation of a shapefile archive. The test creates the zip
-        file and should only add the files necessary for the shapefile.
-        In this case, the 'Airports.mxd' file is not a shapefile part and
-        should be excluded from the archive.
+        file and verifies that it is a valid zip file.
         """
         shapefile = os.path.join(self.testShpWorkspace, 'Airports.shp')
         testZipFile = os.path.join(self.archiveWorkspace, 'testZip.zip')
@@ -215,11 +213,28 @@ class TestGeopublisher(unittest.TestCase):
                                  compression=zipfile.ZIP_DEFLATED) as zf:
 
                 geopublisher.shape_zipper(shapefile, zf)
-
-                archiveFiles = zf.namelist()
-                self.assertNotIn('Airports.mxd', archiveFiles)
+            self.assertTrue(zipfile.is_zipfile(testZipFile))
         except arcpy.ExecuteError as e:
             raise e
+
+    def test_get_shapefile_files(self):
+        """
+        Test the function to find all files for a particular
+        shapefile.
+        """
+        shapefile = os.path.join(self.testShpWorkspace, 'Airports.shp')
+        expected = [
+            'Airports.aih', 'Airports.ain', 'Airports.atx',
+            'Airports.cpg', 'Airports.dbf', 'Airports.fbn',
+            'Airports.fbx', 'Airports.ixs', 'Airports.mxs',
+            'Airports.prj', 'Airports.sbn', 'Airports.sbx',
+            'Airports.shp', 'Airports.shp.xml', 'Airports.shx'
+        ]
+        results = geopublisher.get_shapefile_files(shapefile)
+        for file in results:
+            base_name = os.path.basename(file)
+            self.assertIn(base_name, expected)
+        self.assertNotIn(os.path.join(self.testShpWorkspace, 'Airports.mxd'), results)
 
     def tearDown(self):
         """
@@ -236,7 +251,8 @@ class TestGeopublisher(unittest.TestCase):
             arcpy.Delete_management(fc)
         for root, dirs, files in os.walk(self.archiveWorkspace):
             for file in files:
-                os.remove(os.path.join(root, file))
+                if file <> '.blank':
+                    os.remove(os.path.join(root, file))
 
 if __name__ == '__main__':
     unittest.main()
