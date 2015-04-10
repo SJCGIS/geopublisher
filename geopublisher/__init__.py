@@ -2,4 +2,4 @@
 
 __author__ = 'Nick Peihl'
 __email__ = 'nickp@sanjuanco.com'
-__version__ = '0.1.0'
+__version__ = '0.1.3'
