@@ -92,7 +92,8 @@ def shape_zipper(shapefile, zip):
     for file in files:
             try:
                 print('Adding %s...' % file)
-                zip.write(file, arcname=file)
+                name = os.path.basename(file)
+                zip.write(file, arcname=name)
             except arcpy.ExecuteError as e:
                 raise e
 
