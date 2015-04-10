@@ -3,7 +3,7 @@
 History
 -------
 
-Unreleased
+0.1.2 (2015-04-10)
 ---------------------
 * Fixed
   * Test tearDown no longer deletes .blank file in tests/data/results/Results_Archive directory
