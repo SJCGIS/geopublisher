@@ -10,4 +10,4 @@ Development Lead
 Contributors
 ------------
 
-* None yet
+* Shaun Walbridge <http://github.com/scw>
