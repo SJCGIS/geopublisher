@@ -5,6 +5,10 @@ import glob
 import arcpy
 from datetime import date, datetime
 import zipfile
+from logging import Logger
+
+
+logger = Logger()
 
 
 def publish_data(input_fc, output_location, output_fc, archive_folder=None):
@@ -24,20 +28,23 @@ def publish_data(input_fc, output_location, output_fc, archive_folder=None):
     """
     try:
         output_file = os.path.join(output_location, output_fc)
-        print(output_file)
-        print('Publishing ' + input_fc + ' to ' + output_file)
+        logger.logMsg('Publishing ' + input_fc + ' to ' + output_file)
         if arcpy.Exists(output_file):
-            print (output_file + ' exists, trying to delete...')
+            logger.logMsg(output_file + ' exists, trying to delete...')
             arcpy.Delete_management(output_file)
-        print('Exporting %s to %s' % (input_fc, output_file))
+        logger.logMsg('Exporting %s to %s' % (input_fc, output_file))
         arcpy.CopyFeatures_management(input_fc, output_file)
         if archive_folder:
             try:
                 create_archive(archive_folder, output_file)
             except arcpy.ExecuteError as e:
                 raise e
+                logger.logError()
+        logger.writeLogToFile()
     except arcpy.ExecuteError as e:
         raise e
+        logger.logError()
+        logger.writeLogToFile()
 
 
 def create_archive(archive_folder, output_file):
@@ -56,19 +63,19 @@ def create_archive(archive_folder, output_file):
         If output_file isn't a shapefile, create a temporary one to
         use for archiving
         """
-        temp_name = arcpy.CreateScratchName('tmp', '', 'Shapefile',
+        temp_name = arcpy.CreateUniqueName(os.path.basename(output_file),
                                             arcpy.env.scratchFolder)
         temp_file = os.path.join(os.environ['TMP'], temp_name)
         arcpy.CopyFeatures_management(output_file, temp_file)
         output_file = temp_file
-        print('Creating temporary shapefile %s for archiving' % output_file)
-    print('output_desc.file: %s' % output_desc.file)
+        logger.logMsg('Creating temporary shapefile %s for archiving' % output_file)
+    logger.logMsg('output_desc.file: %s' % output_desc.file)
     archive_file = output_desc.file
     archive_file += '_'
     archive_file += date.isoformat(datetime.now())
     archive_file += '.zip'
     archive_filepath = os.path.join(archive_folder, archive_file)
-    print('Archiving %s to %s' % (output_file, archive_filepath))
+    logger.logMsg('Archiving %s to %s' % (output_file, archive_filepath))
     output_desc = arcpy.Describe(output_file)
     try:
         with zipfile.ZipFile(archive_filepath, mode='w',
@@ -77,6 +84,7 @@ def create_archive(archive_folder, output_file):
             zip_info(zf)
     except arcpy.ExecuteError as e:
         raise e
+        logger.logError()
 
 
 def shape_zipper(shapefile, zip):
@@ -91,11 +99,12 @@ def shape_zipper(shapefile, zip):
     files = get_shapefile_files(shapefile)
     for file in files:
             try:
-                print('Adding %s...' % file)
+                logger.logMsg('Adding %s...' % file)
                 name = os.path.basename(file)
                 zip.write(file, arcname=name)
             except arcpy.ExecuteError as e:
                 raise e
+                logger.logError()
 
 
 def get_shapefile_files(shp_name):
@@ -118,12 +127,14 @@ def get_shapefile_files(shp_name):
 
 
 def zip_info(zip):
+    zipInfo = []
     for info in zip.infolist():
-        print(info.filename)
-        print('\tComment:\t', info.comment)
-        print('\tModified:\t', datetime(*info.date_time))
-        print('\tSystem:\t\t', info.create_system, '(0 = Windows, 3 = Unix)')
-        print('\tZIP version:\t', info.create_version)
-        print('\tCompressed:\t', info.compress_size, 'bytes')
-        print('\tUncompressed:\t', info.file_size, 'bytes')
-        print()
+        zipInfo.append(info.filename)
+        zipInfo.append('\tComment:\t' + info.comment)
+        zipInfo.append('\tModified:\t' + datetime(*info.date_time).isoformat())
+        zipInfo.append('\tSystem:\t\t' + str(info.create_system) + ' (0 = Windows, 3 = Unix)')
+        zipInfo.append('\tZIP version:\t' + str(info.create_version))
+        zipInfo.append('\tCompressed:\t' + str(info.compress_size) + ' bytes')
+        zipInfo.append('\tUncompressed:\t' + str(info.file_size) + ' bytes')
+        zipInfo.append('')
+    logger.logMsg('\n'.join(zipInfo))
