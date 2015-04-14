@@ -3,6 +3,22 @@
 History
 -------
 
+0.2.0 (2015-04-14)
+---------------------
+* Fixed
+
+  * Shapefiles created for archives from geodatabase to geodatabase publishing were given scratch names that didn't make sense. Now the shapefile names match the basename of the feature class.
+
+* Added
+
+  * Logging module contains Logger class for logging messages to a file rather than rely on stdout
+
+  * Messaging module contains Emailer class for sending email notifications
+
+* Changed
+
+  * Better logging using new Logger class rather than print functions
+
 0.1.3 (2015-04-10)
 ---------------------
 * Fixed
@@ -32,6 +48,7 @@ History
   * Modified test for above change.
 
 * Added
+
   * Added tests for get_shapefile_files function.
 
   * Added easy_install to setup.cfg

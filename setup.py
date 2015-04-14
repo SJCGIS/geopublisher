@@ -27,7 +27,7 @@ test_requirements = [
 
 setup(
     name='geopublisher',
-    version='0.1.2',
+    version='0.2.0',
     description="Tools to publish GIS data using Arcpy",
     long_description=readme + '\n\n' + history,
     author="Nick Peihl",
